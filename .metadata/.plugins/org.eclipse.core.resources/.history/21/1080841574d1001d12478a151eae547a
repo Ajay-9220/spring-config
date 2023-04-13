@@ -1,0 +1,16 @@
+package in.ajayit.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeRestController {
+	
+	public String WelcomeMsg() {
+		
+		String msg ="Good Morning...";
+		
+		return msg;
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package in.ajayit.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CustomerRestController {
+	
+	
+	public ResponseEntity<Mono<>>
+
+}

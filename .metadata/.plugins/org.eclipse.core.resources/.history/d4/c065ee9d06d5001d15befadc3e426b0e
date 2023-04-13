@@ -1,0 +1,24 @@
+package in.ajayit.rest;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DemoRestontroller {
+	
+@GetMapping("/")
+	public String getDateRedis() {
+
+		String msg = "date Redis method() calls";
+		if (new Random().nextInt(10) <= 10) {
+			throw new RuntimeException("Redis Server Is Down");
+
+		return msg;
+	}
+
+	public String getDateDB() {
+		String msg = "date DB()method is calls";
+		return msg;
+	}
+
+}

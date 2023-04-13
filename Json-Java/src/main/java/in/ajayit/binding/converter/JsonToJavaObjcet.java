@@ -1,0 +1,23 @@
+package in.ajayit.binding.converter;
+
+import java.io.File;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import in.ajayit.binding.Book;
+
+public class JsonToJavaObjcet {
+
+	public static void main(String[] args) throws Exception {
+
+		File jsonFile = new File("book.json");
+
+		ObjectMapper mapper = new ObjectMapper();
+
+		// Book book = mapper.readValue(jsonfile, Book.class);
+		Book book = mapper.readValue(jsonFile, Book.class);
+		System.out.println("conersiom compeleted");
+
+	}
+
+}

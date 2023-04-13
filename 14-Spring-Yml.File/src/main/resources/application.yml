@@ -1,0 +1,9 @@
+server:
+  port: 9090
+  
+ajayit:
+  messages:
+    welcomeMsg: welcome ajayit..
+    greetMsg: GoodMorning...
+    wishMsg: All best...
+    
